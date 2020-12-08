@@ -4,7 +4,7 @@ COPY . /app
 WORKDIR /app
 RUN apk update 
 RUN apk add git 
-RUN go get github.com/gin-gonic/gin
+RUN go get github.com/wfzhu/gin
 RUN go build
 
 FROM alpine:latest
